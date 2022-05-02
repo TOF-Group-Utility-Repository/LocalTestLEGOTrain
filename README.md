@@ -1,3 +1,5 @@
+Code comes from https://github.com/mfasDa/legotrain_helpers and https://twiki.cern.ch/twiki/bin/viewauth/ALICE/AnalysisTrains#Local_train_test
+
 #### How to run locally an already existing LEGO train 
 
 1. Go to [https://alimonitor.cern.ch/trains/](https://alimonitor.cern.ch/trains/) and choose the train you would like to test, i.e. PWGZZ/MCGen_pp/2351_20220326-2110
@@ -27,7 +29,7 @@
 . downloadtraintest  PWGZZ/MCGen_pp/2351_20220326-2110
 ```
 
-3. Change the configuration file *MLTrainDefinition.cfg* witn you task name and location. Please note that between ```#Module.StartConfig``` and ```#Module.EndConfig``` you shoul put your task customization as usual in ALICE wagons, if no customization is need **leave an empty line**.
+3. Change the configuration file *MLTrainDefinition.cfg* with you task name and location. Please note that between ```#Module.StartConfig``` and ```#Module.EndConfig``` you should put your task customization as it is usual in ALICE wagons, if no customization is needed **leave an empty line**.
 
 4. Generate the macros for launching the train in test mode:
 ```
@@ -48,4 +50,3 @@ gROOT->LoadMacro("AliAnalysisTaskMCPredictionsStrgVsMultVsZDC.cxx++g");
 
 
 
-Code comes from https://github.com/mfasDa/legotrain_helpers and https://twiki.cern.ch/twiki/bin/viewauth/ALICE/AnalysisTrains#Local_train_test
